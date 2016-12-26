@@ -4,6 +4,6 @@ This work is an overview on unsupervised learning - *Clustering Analysis*. I sta
 There are 2 documents included: *clustering.pdf* and *walmart.pdf*. Clustering.pdf will describe the process behind KMeans and go over the Elbow and silhouette plots. Walmart.pdf is just an application of KMeans over a Kaggle competition dataset. I will also create a folder for the data sets used and the jupyter notebooks.     
      
 <sub>
-Note: I won't be covering more advanced topics like fuzzy clustering and hierarchical clustering. 
+Note: I won't be covering more advanced topics like fuzzy clustering and hierarchical clustering here. 
 
  
