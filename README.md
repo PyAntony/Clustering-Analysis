@@ -20,7 +20,7 @@ Prototype-based clustering since there is a prototype that represents the cluste
 This is a visual representation of 150 data points grouped together by K-means. Each color
 represents a cluster. There is no specific order (hierarchy) or labels applied to clusters:
 
-![pic1]()
+![pic1](https://github.com/PyAntony/Clustering-Analysis/blob/master/images/pic1.png)
 
 How are data points classified? It is important to note that this function doesn’t come up with
 the best number of classes (k); we must specify the number of classes we want beforehand. With that
