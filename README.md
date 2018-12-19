@@ -104,8 +104,8 @@ for i in range(0,14):
     plt.tight_layout()
 ```
 
-![pic7]()
-
+![pic7](https://github.com/PyAntony/Clustering-Analysis/blob/master/images/pn1.png)
+![pic8](https://github.com/PyAntony/Clustering-Analysis/blob/master/images/pn2.png)
 
 
 
