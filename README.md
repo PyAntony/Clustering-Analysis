@@ -48,7 +48,7 @@ formula is:
 
 ![pic6](https://github.com/PyAntony/Clustering-Analysis/blob/master/images/pic6.png)
 
-### Silhouette Analysis on Walmart dataset (walmart.ipynb)
+### Silhouette Analysis on Walmart dataset (from walmart.ipynb)
 
 
 ```python
