@@ -47,7 +47,6 @@ total distance between the centroids and the data points around them (local dist
 formula is:
 
 ![pic6](https://github.com/PyAntony/Clustering-Analysis/blob/master/images/pic6.png)
-<img src="https://github.com/PyAntony/Clustering-Analysis/blob/master/images/pic6.png" width="100" height="100" />
 
 ### Silhouette Analysis on Walmart dataset (walmart.ipynb)
 
