@@ -48,7 +48,61 @@ formula is:
 
 ![pic6](https://github.com/PyAntony/Clustering-Analysis/blob/master/images/pic6.png)
 
+### Silhouette Analysis on Walmart dataset (walmart.ipynb)
 
+
+```python
+# Let's explore how the Silhouette Plot performs for different values of k 
+from sklearn.metrics import silhouette_samples
+
+# to generate 14 models for k in range (2,16)
+m = []
+for k in range(2,16):
+    model = KMeans(n_clusters=k, random_state=0)
+    m.append(model.fit(raw))
+
+clusters = [c.labels_ for c in m]
+
+# to generate the coefficients
+coefs = [silhouette_samples(raw,i) for i in clusters]
+# to set the number of labels and clusters
+unique_labels_list = [np.unique(i) for i in clusters]
+clusters_total_num = [i.shape[0] for i in unique_labels_list]
+
+from matplotlib import cm
+
+# loop to generate 14 plots starting from k=2
+for i in range(0,14):
+    col=.01
+    y_low,y_up=0,0 
+    ticks =[]
+    plt.figure(figsize=(6,5), facecolor='lightgray',frameon=True)
+    plt.style.use('seaborn-dark-palette')
+    plt.title('For k='+str(i+2))
+    for b in unique_labels_list[i]:        
+        val_c = coefs[i][clusters[i]==b]
+        val_c.sort()
+        y_up += len(val_c)
+        cl =cm.Set1(X=col)        
+        #plot
+        plt.barh(bottom=range(y_low, y_up), 
+                width=val_c, 
+                height=1.2,
+                edgecolor=cl)
+        ticks.append((y_low+y_up)/2)
+        y_low += len(val_c)
+        col += .04
+
+    #to get the coefficients average and plot it as a line    
+    coef_avg = np.mean(coefs[i]) 
+    plt.axvline(coef_avg, color="black", ls='--', lw=3)
+
+    #to modify the ticks
+    plt.yticks(ticks, unique_labels_list[i]+1)
+    plt.ylabel('CLUSTERS')
+    plt.xlabel('COEFFICIENTS')
+    plt.tight_layout()
+```
 
 
 
