@@ -28,25 +28,25 @@ value, the function compute the following 4 steps:
 
 a) Every single data point is randomly assigned to a cluster.
 
-![pic2]()
+![pic2](https://github.com/PyAntony/Clustering-Analysis/blob/master/images/pic2.png)
 
 b) The cluster centroids -the mean of the data points in the clusters- are found.
 
-![pic3]()
+![pic3](https://github.com/PyAntony/Clustering-Analysis/blob/master/images/pic3.png)
 
 c) Data points are assigned to the same cluster as the closest centroid (by squared Euclidean distance).
 
-![pic4]()
+![pic4](https://github.com/PyAntony/Clustering-Analysis/blob/master/images/pic4.png)
 
 d) Steps b and c will iterate until the function finds no more changes in the clusters.
 
-![pic5]()
+![pic5](https://github.com/PyAntony/Clustering-Analysis/blob/master/images/pic5.png)
 
 K-means can also be described as an optimization function where the goal is to minimize the
 total distance between the centroids and the data points around them (local distance). The objective
 formula is:
 
-![pic6]()
+![pic6](https://github.com/PyAntony/Clustering-Analysis/blob/master/images/pic6.png)
 
 
 
