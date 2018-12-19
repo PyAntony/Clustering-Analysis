@@ -46,7 +46,8 @@ K-means can also be described as an optimization function where the goal is to m
 total distance between the centroids and the data points around them (local distance). The objective
 formula is:
 
-![pic6](https://github.com/PyAntony/Clustering-Analysis/blob/master/images/pic6.png){:height="50%" width="50%"}
+![pic6](https://github.com/PyAntony/Clustering-Analysis/blob/master/images/pic6.png)
+<img src="https://github.com/PyAntony/Clustering-Analysis/blob/master/images/pic6.png" width="200" height="200" />
 
 ### Silhouette Analysis on Walmart dataset (walmart.ipynb)
 
