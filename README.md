@@ -7,7 +7,7 @@ The work found in the **clustering.pdf** document is an overview on the K-Means 
 - How to select the number of clusters: the elbow method.
 - Testing cluster quality using Silhouette Analysis.
 
-In addition there is a full application of the algorithm on a Walmart dataset provided by Kaggle. It is a walk-trough of a proper machine learning exercise including data preparation, data exploration, algorithm implementation and analysis. You can find this walk-trough in the **walmart.ipynb** notebook. Additional notebooks used can be found in the *Notebooks* folder.
+In addition there is a full implementation of the algorithm on a Walmart dataset provided by Kaggle. It is a walk-trough of a proper machine learning exercise including data preparation, data exploration, algorithm implementation and analysis. You can find this walk-trough in the **walmart.ipynb** notebook. Additional notebooks used can be found in the *Notebooks* folder.
 
 ## Extracts 
 
@@ -104,7 +104,7 @@ for i in range(0,14):
     plt.tight_layout()
 ```
 
-
+![pic7]()
 
 
 
